@@ -1,0 +1,54 @@
+# ==========================================
+# 1. Virtual Environments
+# ==========================================
+dataset_download.py
+.env
+.venv/
+venv/
+env/
+
+# ==========================================
+# 2. Python Cache & Compiled Files
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==========================================
+# 3. Datasets & Dataloader Caches
+# ==========================================
+# Ignores your heavy image folders and PyTorch/YOLO cache files
+freshness_classification/dataset/
+object_detection/*/myproject-7/
+*.cache
+
+# ==========================================
+# 4. Model Weights
+# ==========================================
+# GitHub blocks files over 100MB. It is best practice to keep weights local 
+# or use Git LFS (Large File Storage) if you absolutely must push them.
+*.pt
+*.pth
+
+# ==========================================
+# 5. Training Runs & Logs
+# ==========================================
+# Ignores the Ultralytics output folders containing training batches and logs
+runs/
+freshness_classification/runs/
+object_detection/*/runs/
+
+# ==========================================
+# 6. Generated Output Images (Optional)
+# ==========================================
+# Uncomment these if you DO NOT want to push your matrices/inference tests to GitHub.
+# If you plan to display them in your README, leave them commented out!
+# inference_result.jpg
+# *confusion_matrix.png
+
+# ==========================================
+# 7. OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db
