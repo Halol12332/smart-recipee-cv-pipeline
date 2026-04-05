@@ -7,7 +7,7 @@ def main():
     
     print("Starting Training (Optimized for 4GB VRAM)...")
     model.train(
-        data="myproject-7/data.yaml", # Path to your manually downloaded YOLO format
+        data="myproject-8/data.yaml", # Path to your manually downloaded YOLO format
         epochs=100,             # Matching YOLOv8 and Faster R-CNN for a fair test
         imgsz=640,              # RT-DETR works well with standard 640x640 resolution
         batch=2,                # CRITICAL for 4GB VRAM. Transformers are highly memory-hungry!
