@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 31
+names: ['anchovies', 'apple', 'bean_sprouts', 'brocolli', 'cabbage', 'carrot', 'chicken', 'chili', 'coconut_milk', 'corn', 'cucumber', 'curry_leaves', 'egg', 'eggplant', 'fish', 'garlic', 'ginger', 'grape', 'leafy_greens', 'lemongrass', 'lime', 'onion', 'orange', 'pakchoy', 'potato', 'spring_onion', 'tempeh', 'tofu', 'tomato', 'turmeric', 'unknown_bag']
+
+roboflow:
+  workspace: smartrecipee
+  project: myproject-gqmlb
+  version: 9
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/smartrecipee/myproject-gqmlb/dataset/9
